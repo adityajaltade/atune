@@ -1,5 +1,5 @@
-aprof
-=====
+atune
+-----------
 
 A simple profiler in C which gives the output as the number of ticks between any
 two arbitrary points in code.
