@@ -38,3 +38,7 @@ cleanup is required.
 on the console. This will surely mess up the expected outputs of piped
 programs. Need to provide a way to gather this data in a third location and make
 available on demand.
+
+Idea:
+------------
+This is loosely based on the idea from here :: http://locklessinc.com/articles/profiling/
