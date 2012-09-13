@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 
-#include "profiler.h"
+#include "../profiler.h"
 
 #define NO_RUNS 100000
 
@@ -23,7 +23,7 @@ void random_func()
 int rec_func(int i)
 {
 #ifdef PROFILING
-//    BEGIN_PROFILING(recursive);
+    BEGIN_PROFILING(recursive);
 #endif
     char *temp;
     if(i>0)
@@ -32,6 +32,9 @@ int rec_func(int i)
         rec_func(--i);
         free (temp);
     }
+#ifdef PROFILING
+    END_PROFILING(recursive);
+#endif
 }
 
 int main()
