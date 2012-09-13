@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 
-#include "profiler.h"
+#include "../profiler.h"
 
 #define NO_RUNS 100000
 
